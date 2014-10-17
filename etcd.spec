@@ -29,8 +29,8 @@
 %define etcd_data  %{_localstatedir}/lib/%{name}
 
 Name:      etcd
-Version:   0.4.6
-Release:   2
+Version:   0.4.6b
+Release:   3
 Summary:   A highly-available key value store for shared configuration and service discovery.
 License:   Apache 2.0
 URL:       https://github.com/coreos/etcd
@@ -119,6 +119,7 @@ fi
 %config(noreplace) %{_sysconfdir}/sysconfig/%{name}
 
 %changelog
+* Fri Oct 17 2014 Jan Nabbefelde <jan.nabbefeld@kreuzwerker.de> Moved to upstream version 766aa85320218322ce188356d8e05d8207beebc3
 * Thu Oct 10 2014 Jan Nabbefelde <jan.nabbefeld@kreuzwerker.de> Removed -v option from init script
 * Thu Sep 18 2014 Derek Douville <derekd@nodeprime.com> Remove golang, etcd is statically linked
 * Wed Sep 17 2014 Derek Douville <derekd@nodeprime.com> 0.4.6
