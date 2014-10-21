@@ -1,0 +1,10 @@
+[Unit]
+Description=etcd
+
+[Service]
+User=etcd
+PermissionsStartOnly=true
+EnvironmentFile=/etc/sysconfig/etcd
+ExecStart=/usr/bin/etcd
+Restart=always
+RestartSec=10s
